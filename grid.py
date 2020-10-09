@@ -91,12 +91,7 @@ class Grid:
                 elif self.Cells[x][y] == "Block":
                     pg.draw.rect(self.win, (65,65,65),
                     (x*self.Cells_size+self.Cells_x+5, y*self.Cells_size+self.header_h+5, self.Cells_size-10,self.Cells_size-10))
-
-class PathFind():
-
-    def __init__(self, grid):
-        pass
-
+                    
 def ButtonClick(cursor, rect):
     return rect.collidepoint(cursor)
     
